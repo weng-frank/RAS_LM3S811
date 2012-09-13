@@ -1,0 +1,869 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\rvmdk\RASDemo.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\rvmdk\RASDemo.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT4.0 [Build 524]: Last Updated: Wed Nov 11 22:21:54 2009
+<BR><P>
+<H3>Maximum Stack Usage =        168 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; lsDemo &rArr; atoi &rArr; strtol &rArr; _strtoul
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[1db909c]">Reset_Handler</a>
+ <LI><a href="#[1db927c]">NmiSR</a>
+ <LI><a href="#[1db9240]">FaultISR</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[2cb3304]">UARTCharPut</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2cb3304]">UARTCharPut</a><BR>
+ <LI><a href="#[2cb337c]">UARTCharGet</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2cb337c]">UARTCharGet</a><BR>
+ <LI><a href="#[2cb3250]">UARTConfigSetExpClk</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2cb3250]">UARTConfigSetExpClk</a><BR>
+ <LI><a href="#[1dadf6c]">SysCtlDelay</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1dadf6c]">SysCtlDelay</a><BR>
+ <LI><a href="#[1db927c]">NmiSR</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1db927c]">NmiSR</a><BR>
+ <LI><a href="#[1db9240]">FaultISR</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1db9240]">FaultISR</a><BR>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1db9204]">IntDefaultHandler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[1db909c]">Reset_Handler</a>
+ <LI><a href="#[1db927c]">NmiSR</a>
+ <LI><a href="#[1db9240]">FaultISR</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9024]">EncoderInterruptHandler</a>
+ <LI><a href="#[1db9024]">EncoderInterruptHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db8fe8]">LSIntHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9204]">IntDefaultHandler</a>
+ <LI><a href="#[1db9c54]">main</a>
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[1db909c]"></a>Reset_Handler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_rvmdk.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[2d13e44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[2d13e44]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[1db909c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Reset_Handler
+</UL>
+
+<P><STRONG><a name="[2d12c38]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[2d12b0c]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[2d1247c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[2d12ad0]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[2d1247c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[2d129e0]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7.o(.ARM.Collect$$$$00000007))
+
+<P><STRONG><a name="[1dadf6c]"></a>SysCtlDelay</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sysctl.o(.emb_text))
+<BR><BR>[Calls]<UL><LI><a href="#[1dadf6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1dade04]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
+<LI><a href="#[1dadf6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+</UL>
+
+<P><STRONG><a name="[2cac914]"></a>CPUcpsid</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
+
+<P><STRONG><a name="[2cac8d8]"></a>CPUcpsie</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, cpu.o(.emb_text))
+<BR><BR>[Called By]<UL><LI><a href="#[2cb166c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+</UL>
+
+<P><STRONG><a name="[1dad594]"></a>CPUwfi</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
+
+<P><STRONG><a name="[1db9ee8]"></a>mainMenu</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rasdemo.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1db9600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTprintf
+</UL>
+
+<P><STRONG><a name="[1db9eac]"></a>encMenu</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rasdemo.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1db9600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTprintf
+</UL>
+
+<P><STRONG><a name="[1db9e70]"></a>encDemo</STRONG> (Thumb, 326 bytes, Stack size 24 bytes, rasdemo.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = encDemo &rArr; atoi &rArr; strtol &rArr; _strtoul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db9588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wait
+<LI><a href="#[1db95c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTputc
+<LI><a href="#[1db9600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTprintf
+<LI><a href="#[1db963c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgets
+<LI><a href="#[1db9678]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgetc
+<LI><a href="#[1db96f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharsAvail
+<LI><a href="#[1db9894]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PresetEncoderCounts
+<LI><a href="#[1db9a38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetEncoderCounts
+<LI><a href="#[1db9a74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetEncoderCount
+<LI><a href="#[2d12e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
+<LI><a href="#[2d13a84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1db9e34]"></a>lsMenu</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rasdemo.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1db9600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTprintf
+</UL>
+
+<P><STRONG><a name="[1db9df8]"></a>lsDemo</STRONG> (Thumb, 570 bytes, Stack size 40 bytes, rasdemo.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = lsDemo &rArr; atoi &rArr; strtol &rArr; _strtoul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db9588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wait
+<LI><a href="#[1db95c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTputc
+<LI><a href="#[1db9600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTprintf
+<LI><a href="#[1db963c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgets
+<LI><a href="#[1db9678]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgetc
+<LI><a href="#[1db96f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharsAvail
+<LI><a href="#[1db97e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetDischargeTime
+<LI><a href="#[1db981c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadLineSensorAsync
+<LI><a href="#[1db9858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadLineSensor
+<LI><a href="#[2d12e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
+<LI><a href="#[2d13a84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1db9dbc]"></a>adcMenu</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rasdemo.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1db9600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTprintf
+</UL>
+
+<P><STRONG><a name="[1db9d80]"></a>adcDemo</STRONG> (Thumb, 468 bytes, Stack size 24 bytes, rasdemo.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = adcDemo &rArr; atoi &rArr; strtol &rArr; _strtoul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db9588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wait
+<LI><a href="#[1db95c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTputc
+<LI><a href="#[1db9600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTprintf
+<LI><a href="#[1db963c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgets
+<LI><a href="#[1db9678]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgetc
+<LI><a href="#[1db9768]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetServoPosition
+<LI><a href="#[1db9b64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSequenceDataGet
+<LI><a href="#[1db9bdc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCProcessorTrigger
+<LI><a href="#[1db9c18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCIntStatus
+<LI><a href="#[2d12e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
+<LI><a href="#[2d13a84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1db9d44]"></a>servoMenu</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, rasdemo.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1db9600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTprintf
+</UL>
+
+<P><STRONG><a name="[1db9d08]"></a>servoDemo</STRONG> (Thumb, 138 bytes, Stack size 24 bytes, rasdemo.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1db95c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTputc
+<LI><a href="#[1db9600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTprintf
+<LI><a href="#[1db963c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgets
+<LI><a href="#[1db9678]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgetc
+<LI><a href="#[1db96f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharsAvail
+<LI><a href="#[1db9768]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetServoPosition
+<LI><a href="#[2d12e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
+<LI><a href="#[2d13a84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
+</UL>
+
+<P><STRONG><a name="[1db9ccc]"></a>motorMenu</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, rasdemo.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1db9600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTprintf
+</UL>
+
+<P><STRONG><a name="[1db9c90]"></a>motorDemo</STRONG> (Thumb, 208 bytes, Stack size 16 bytes, rasdemo.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = motorDemo &rArr; atoi &rArr; strtol &rArr; _strtoul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db95c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTputc
+<LI><a href="#[1db9600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTprintf
+<LI><a href="#[1db963c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgets
+<LI><a href="#[1db9678]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgetc
+<LI><a href="#[1db97a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetMotorPowers
+<LI><a href="#[2d12e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
+<LI><a href="#[2d13a84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1db9c54]"></a>main</STRONG> (Thumb, 382 bytes, Stack size 40 bytes, rasdemo.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = main &rArr; lsDemo &rArr; atoi &rArr; strtol &rArr; _strtoul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db95c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTputc
+<LI><a href="#[1db9600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTprintf
+<LI><a href="#[1db963c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgets
+<LI><a href="#[1db9678]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgetc
+<LI><a href="#[1db96b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTStdioInit
+<LI><a href="#[1db96f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharsAvail
+<LI><a href="#[1db972c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+<LI><a href="#[1db9768]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetServoPosition
+<LI><a href="#[1db98d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LockoutProtection
+<LI><a href="#[1db990c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeServos
+<LI><a href="#[1db9948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeMotors
+<LI><a href="#[1db9984]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeMCU
+<LI><a href="#[1db99c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeLineSensorAsync
+<LI><a href="#[1db99fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeEncoders
+<LI><a href="#[1db9ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
+<LI><a href="#[1db9aec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSequenceStepConfigure
+<LI><a href="#[1db9b28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSequenceEnable
+<LI><a href="#[1db9ba0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSequenceConfigure
+<LI><a href="#[1db9c90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;motorDemo
+<LI><a href="#[1db9d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adcDemo
+<LI><a href="#[1db9df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lsDemo
+<LI><a href="#[1db9e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;encDemo
+<LI><a href="#[2d12e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
+<LI><a href="#[2d13a84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry7.o(.ARM.Collect$$$$00000007)
+</UL>
+<P><STRONG><a name="[2d13a84]"></a>__rt_ctype_table</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, ctype_o.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[1db9c90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;motorDemo
+<LI><a href="#[1db9d08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;servoDemo
+<LI><a href="#[1db9d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adcDemo
+<LI><a href="#[1db9df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lsDemo
+<LI><a href="#[1db9e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;encDemo
+<LI><a href="#[2d125a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtol
+</UL>
+
+<P><STRONG><a name="[2d12e18]"></a>atoi</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, atoi.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = atoi &rArr; strtol &rArr; _strtoul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2d125a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtol
+<LI><a href="#[2d1274c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_errno_addr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[1db9c90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;motorDemo
+<LI><a href="#[1db9d08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;servoDemo
+<LI><a href="#[1db9d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adcDemo
+<LI><a href="#[1db9df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lsDemo
+<LI><a href="#[1db9e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;encDemo
+</UL>
+
+<P><STRONG><a name="[2d125a8]"></a>strtol</STRONG> (Thumb, 112 bytes, Stack size 32 bytes, strtol.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = strtol &rArr; _strtoul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2d12260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_strtoul
+<LI><a href="#[2d1274c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_errno_addr
+<LI><a href="#[2d13a84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d12e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
+</UL>
+
+<P><STRONG><a name="[2d1247c]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[2d12ad0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d12b0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[2d12440]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[2d12260]"></a>_strtoul</STRONG> (Thumb, 152 bytes, Stack size 40 bytes, _strtoul.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = _strtoul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2d12134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_chval
+<LI><a href="#[2d1274c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_errno_addr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2d125a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtol
+</UL>
+
+<P><STRONG><a name="[2d12134]"></a>_chval</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, _chval.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2d12260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_strtoul
+</UL>
+
+<P><STRONG><a name="[1db9c18]"></a>ADCIntStatus</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, adc.o(i.ADCIntStatus))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adcDemo
+</UL>
+
+<P><STRONG><a name="[1db9bdc]"></a>ADCProcessorTrigger</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, adc.o(i.ADCProcessorTrigger))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adcDemo
+</UL>
+
+<P><STRONG><a name="[1db9ba0]"></a>ADCSequenceConfigure</STRONG> (Thumb, 50 bytes, Stack size 4 bytes, adc.o(i.ADCSequenceConfigure))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = ADCSequenceConfigure
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1db9b64]"></a>ADCSequenceDataGet</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, adc.o(i.ADCSequenceDataGet))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adcDemo
+</UL>
+
+<P><STRONG><a name="[1db9b28]"></a>ADCSequenceEnable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, adc.o(i.ADCSequenceEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1db9aec]"></a>ADCSequenceStepConfigure</STRONG> (Thumb, 110 bytes, Stack size 4 bytes, adc.o(i.ADCSequenceStepConfigure))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = ADCSequenceStepConfigure
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1db9024]"></a>EncoderInterruptHandler</STRONG> (Thumb, 210 bytes, Stack size 40 bytes, encoder.o(i.EncoderInterruptHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = EncoderInterruptHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db2670]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinRead
+<LI><a href="#[1db26ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinIntStatus
+<LI><a href="#[1db2760]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinIntClear
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[1db28c8]"></a>GPIODirModeSet</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, gpio.o(i.GPIODirModeSet))
+<BR><BR>[Called By]<UL><LI><a href="#[1db2454]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypePWM
+<LI><a href="#[1db2544]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+<LI><a href="#[1db2580]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<LI><a href="#[1db9ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
+</UL>
+
+<P><STRONG><a name="[1db2850]"></a>GPIOIntTypeSet</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, gpio.o(i.GPIOIntTypeSet))
+<BR><BR>[Called By]<UL><LI><a href="#[1db99fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeEncoders
+</UL>
+
+<P><STRONG><a name="[1db27d8]"></a>GPIOPadConfigSet</STRONG> (Thumb, 176 bytes, Stack size 0 bytes, gpio.o(i.GPIOPadConfigSet))
+<BR><BR>[Called By]<UL><LI><a href="#[1db2454]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypePWM
+<LI><a href="#[1db2544]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+<LI><a href="#[1db2580]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<LI><a href="#[1db9ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
+</UL>
+
+<P><STRONG><a name="[1db2760]"></a>GPIOPinIntClear</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gpio.o(i.GPIOPinIntClear))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9024]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EncoderInterruptHandler
+</UL>
+
+<P><STRONG><a name="[1db26e8]"></a>GPIOPinIntEnable</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, gpio.o(i.GPIOPinIntEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[1db99fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeEncoders
+</UL>
+
+<P><STRONG><a name="[1db26ac]"></a>GPIOPinIntStatus</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, gpio.o(i.GPIOPinIntStatus))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9024]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EncoderInterruptHandler
+</UL>
+
+<P><STRONG><a name="[1db2670]"></a>GPIOPinRead</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gpio.o(i.GPIOPinRead))
+<BR><BR>[Called By]<UL><LI><a href="#[1db8fe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LSIntHandler
+<LI><a href="#[1db9024]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EncoderInterruptHandler
+<LI><a href="#[1db9858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadLineSensor
+<LI><a href="#[1db98d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LockoutProtection
+</UL>
+
+<P><STRONG><a name="[1db2580]"></a>GPIOPinTypeGPIOInput</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeGPIOInput))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIOPinTypeGPIOInput
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db27d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[1db28c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db8fe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LSIntHandler
+<LI><a href="#[1db9858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadLineSensor
+<LI><a href="#[1db98d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LockoutProtection
+<LI><a href="#[1db99c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeLineSensorAsync
+<LI><a href="#[1db99fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeEncoders
+</UL>
+
+<P><STRONG><a name="[1db2544]"></a>GPIOPinTypeGPIOOutput</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeGPIOOutput))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIOPinTypeGPIOOutput
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db27d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[1db28c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db8fe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LSIntHandler
+<LI><a href="#[1db9858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadLineSensor
+<LI><a href="#[1db9948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeMotors
+</UL>
+
+<P><STRONG><a name="[1db2454]"></a>GPIOPinTypePWM</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypePWM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIOPinTypePWM
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db27d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[1db28c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db990c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeServos
+<LI><a href="#[1db9948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeMotors
+</UL>
+
+<P><STRONG><a name="[1db9ab0]"></a>GPIOPinTypeUART</STRONG> (Thumb, 28 bytes, Stack size 12 bytes, gpio.o(i.GPIOPinTypeUART))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = GPIOPinTypeUART
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db27d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<LI><a href="#[1db28c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1db22ec]"></a>GPIOPinWrite</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gpio.o(i.GPIOPinWrite))
+<BR><BR>[Called By]<UL><LI><a href="#[1db8fe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LSIntHandler
+<LI><a href="#[1db9858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadLineSensor
+<LI><a href="#[1db9948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeMotors
+</UL>
+
+<P><STRONG><a name="[1db9a74]"></a>GetEncoderCount</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, encoder.o(i.GetEncoderCount))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;encDemo
+</UL>
+
+<P><STRONG><a name="[1db9a38]"></a>GetEncoderCounts</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, encoder.o(i.GetEncoderCounts))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;encDemo
+</UL>
+
+<P><STRONG><a name="[1db99fc]"></a>InitializeEncoders</STRONG> (Thumb, 118 bytes, Stack size 24 bytes, encoder.o(i.InitializeEncoders))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = InitializeEncoders &rArr; GPIOPinTypeGPIOInput
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db2580]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<LI><a href="#[1db26e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinIntEnable
+<LI><a href="#[1db2850]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntTypeSet
+<LI><a href="#[1db5ab4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
+<LI><a href="#[1db972c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1db99c0]"></a>InitializeLineSensorAsync</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, linesensor.o(i.InitializeLineSensorAsync))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = InitializeLineSensorAsync &rArr; LSIntHandler &rArr; GPIOPinTypeGPIOOutput
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db2580]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<LI><a href="#[1db5ab4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
+<LI><a href="#[1db8fe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LSIntHandler
+<LI><a href="#[1db972c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+<LI><a href="#[2cb01cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerIntEnable
+<LI><a href="#[2cb166c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<LI><a href="#[2cb1f18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerEnable
+<LI><a href="#[2cb1f90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerConfigure
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1db9984]"></a>InitializeMCU</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, init.o(i.InitializeMCU))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = InitializeMCU &rArr; SysCtlClockSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1dad990]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPWMClockSet
+<LI><a href="#[1dade04]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
+<LI><a href="#[1dade40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockGet
+<LI><a href="#[2cb166c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1db9948]"></a>InitializeMotors</STRONG> (Thumb, 178 bytes, Stack size 32 bytes, motor.o(i.InitializeMotors))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = InitializeMotors &rArr; GPIOPinTypePWM
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db22ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+<LI><a href="#[1db2454]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypePWM
+<LI><a href="#[1db2544]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+<LI><a href="#[1db972c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+<LI><a href="#[2caf7b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMPulseWidthSet
+<LI><a href="#[2caf7f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputState
+<LI><a href="#[2caf830]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputInvert
+<LI><a href="#[2caf86c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenPeriodSet
+<LI><a href="#[2caf8a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenEnable
+<LI><a href="#[2caf8e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenConfigure
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1db990c]"></a>InitializeServos</STRONG> (Thumb, 228 bytes, Stack size 16 bytes, servo.o(i.InitializeServos))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = InitializeServos &rArr; GPIOPinTypePWM
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db2454]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypePWM
+<LI><a href="#[1db972c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+<LI><a href="#[2caf7b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMPulseWidthSet
+<LI><a href="#[2caf7f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputState
+<LI><a href="#[2caf86c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenPeriodSet
+<LI><a href="#[2caf8a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenEnable
+<LI><a href="#[2caf8e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMGenConfigure
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1db5ab4]"></a>IntEnable</STRONG> (Thumb, 104 bytes, Stack size 0 bytes, interrupt.o(i.IntEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[1db99c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeLineSensorAsync
+<LI><a href="#[1db99fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeEncoders
+</UL>
+
+<P><STRONG><a name="[2cb166c]"></a>IntMasterEnable</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, interrupt.o(i.IntMasterEnable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = IntMasterEnable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2cac8d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUcpsie
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9984]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeMCU
+<LI><a href="#[1db99c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeLineSensorAsync
+</UL>
+
+<P><STRONG><a name="[1db8fe8]"></a>LSIntHandler</STRONG> (Thumb, 152 bytes, Stack size 32 bytes, linesensor.o(i.LSIntHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = LSIntHandler &rArr; GPIOPinTypeGPIOOutput
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db22ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+<LI><a href="#[1db2544]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+<LI><a href="#[1db2580]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<LI><a href="#[1db2670]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinRead
+<LI><a href="#[2cb0208]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerIntClear
+<LI><a href="#[2cb1edc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerLoadSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db99c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeLineSensorAsync
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[1db98d0]"></a>LockoutProtection</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, init.o(i.LockoutProtection))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = LockoutProtection &rArr; GPIOPinTypeGPIOInput
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db2580]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<LI><a href="#[1db2670]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinRead
+<LI><a href="#[1db972c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2caf8e4]"></a>PWMGenConfigure</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, pwm.o(i.PWMGenConfigure))
+<BR><BR>[Called By]<UL><LI><a href="#[1db990c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeServos
+<LI><a href="#[1db9948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeMotors
+</UL>
+
+<P><STRONG><a name="[2caf8a8]"></a>PWMGenEnable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, pwm.o(i.PWMGenEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[1db990c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeServos
+<LI><a href="#[1db9948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeMotors
+</UL>
+
+<P><STRONG><a name="[2caf86c]"></a>PWMGenPeriodSet</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, pwm.o(i.PWMGenPeriodSet))
+<BR><BR>[Called By]<UL><LI><a href="#[1db990c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeServos
+<LI><a href="#[1db9948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeMotors
+</UL>
+
+<P><STRONG><a name="[2caf830]"></a>PWMOutputInvert</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, pwm.o(i.PWMOutputInvert))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeMotors
+</UL>
+
+<P><STRONG><a name="[2caf7f4]"></a>PWMOutputState</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, pwm.o(i.PWMOutputState))
+<BR><BR>[Called By]<UL><LI><a href="#[1db990c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeServos
+<LI><a href="#[1db9948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeMotors
+</UL>
+
+<P><STRONG><a name="[2caf7b8]"></a>PWMPulseWidthSet</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, pwm.o(i.PWMPulseWidthSet))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9768]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetServoPosition
+<LI><a href="#[1db97a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetMotorPowers
+<LI><a href="#[1db990c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeServos
+<LI><a href="#[1db9948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeMotors
+</UL>
+
+<P><STRONG><a name="[1db9894]"></a>PresetEncoderCounts</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, encoder.o(i.PresetEncoderCounts))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;encDemo
+</UL>
+
+<P><STRONG><a name="[1db9858]"></a>ReadLineSensor</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, linesensor.o(i.ReadLineSensor))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = ReadLineSensor &rArr; WaitUS
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db22ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
+<LI><a href="#[1db2544]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+<LI><a href="#[1db2580]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<LI><a href="#[1db2670]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinRead
+<LI><a href="#[2cb1fcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitUS
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lsDemo
+</UL>
+
+<P><STRONG><a name="[1db981c]"></a>ReadLineSensorAsync</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, linesensor.o(i.ReadLineSensorAsync))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lsDemo
+</UL>
+
+<P><STRONG><a name="[1db97e0]"></a>SetDischargeTime</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, linesensor.o(i.SetDischargeTime))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lsDemo
+</UL>
+
+<P><STRONG><a name="[1db97a4]"></a>SetMotorPowers</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, motor.o(i.SetMotorPowers))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SetMotorPowers
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2caf7b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMPulseWidthSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;motorDemo
+</UL>
+
+<P><STRONG><a name="[1db9768]"></a>SetServoPosition</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, servo.o(i.SetServoPosition))
+<BR><BR>[Calls]<UL><LI><a href="#[2caf7b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMPulseWidthSet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[1db9d08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;servoDemo
+<LI><a href="#[1db9d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adcDemo
+</UL>
+
+<P><STRONG><a name="[1dade40]"></a>SysCtlClockGet</STRONG> (Thumb, 438 bytes, Stack size 8 bytes, sysctl.o(i.SysCtlClockGet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SysCtlClockGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db96b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTStdioInit
+<LI><a href="#[1db9984]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeMCU
+</UL>
+
+<P><STRONG><a name="[1dade04]"></a>SysCtlClockSet</STRONG> (Thumb, 288 bytes, Stack size 24 bytes, sysctl.o(i.SysCtlClockSet))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SysCtlClockSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1dadf6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9984]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeMCU
+</UL>
+
+<P><STRONG><a name="[1dad990]"></a>SysCtlPWMClockSet</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, sysctl.o(i.SysCtlPWMClockSet))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9984]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeMCU
+</UL>
+
+<P><STRONG><a name="[1db972c]"></a>SysCtlPeripheralEnable</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, sysctl.o(i.SysCtlPeripheralEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wait
+<LI><a href="#[1db96b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTStdioInit
+<LI><a href="#[1db98d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LockoutProtection
+<LI><a href="#[1db990c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeServos
+<LI><a href="#[1db9948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeMotors
+<LI><a href="#[1db99c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeLineSensorAsync
+<LI><a href="#[1db99fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeEncoders
+<LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[2cb1fcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitUS
+</UL>
+
+<P><STRONG><a name="[1dad864]"></a>SysCtlPeripheralPresent</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, sysctl.o(i.SysCtlPeripheralPresent))
+<BR><BR>[Called By]<UL><LI><a href="#[1db96b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTStdioInit
+</UL>
+
+<P><STRONG><a name="[2cb1f90]"></a>TimerConfigure</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, timer.o(i.TimerConfigure))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wait
+<LI><a href="#[1db99c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeLineSensorAsync
+<LI><a href="#[2cb1fcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitUS
+</UL>
+
+<P><STRONG><a name="[2cb1f54]"></a>TimerDisable</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, timer.o(i.TimerDisable))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wait
+<LI><a href="#[2cb1fcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitUS
+</UL>
+
+<P><STRONG><a name="[2cb1f18]"></a>TimerEnable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, timer.o(i.TimerEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wait
+<LI><a href="#[1db99c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeLineSensorAsync
+<LI><a href="#[2cb1fcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitUS
+</UL>
+
+<P><STRONG><a name="[2cb0208]"></a>TimerIntClear</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, timer.o(i.TimerIntClear))
+<BR><BR>[Called By]<UL><LI><a href="#[1db8fe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LSIntHandler
+</UL>
+
+<P><STRONG><a name="[2cb01cc]"></a>TimerIntEnable</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, timer.o(i.TimerIntEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[1db99c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitializeLineSensorAsync
+</UL>
+
+<P><STRONG><a name="[2cb1edc]"></a>TimerLoadSet</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, timer.o(i.TimerLoadSet))
+<BR><BR>[Called By]<UL><LI><a href="#[1db8fe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LSIntHandler
+<LI><a href="#[1db9588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wait
+<LI><a href="#[2cb1fcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitUS
+</UL>
+
+<P><STRONG><a name="[2cb1ea0]"></a>TimerValueGet</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, timer.o(i.TimerValueGet))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wait
+<LI><a href="#[2cb1fcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitUS
+</UL>
+
+<P><STRONG><a name="[2cb337c]"></a>UARTCharGet</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, uart.o(i.UARTCharGet))
+<BR><BR>[Calls]<UL><LI><a href="#[2cb337c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db963c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgets
+<LI><a href="#[1db9678]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgetc
+<LI><a href="#[2cb337c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharGet
+</UL>
+
+<P><STRONG><a name="[2cb3304]"></a>UARTCharPut</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, uart.o(i.UARTCharPut))
+<BR><BR>[Calls]<UL><LI><a href="#[2cb3304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPut
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9600]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTprintf
+<LI><a href="#[1db963c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgets
+<LI><a href="#[2cacc5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTwrite
+<LI><a href="#[2cb3304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPut
+</UL>
+
+<P><STRONG><a name="[1db96f0]"></a>UARTCharsAvail</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, uart.o(i.UARTCharsAvail))
+<BR><BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[1db9d08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;servoDemo
+<LI><a href="#[1db9df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lsDemo
+<LI><a href="#[1db9e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;encDemo
+</UL>
+
+<P><STRONG><a name="[2cb3250]"></a>UARTConfigSetExpClk</STRONG> (Thumb, 110 bytes, Stack size 0 bytes, uart.o(i.UARTConfigSetExpClk))
+<BR><BR>[Calls]<UL><LI><a href="#[2cb3250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTConfigSetExpClk
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db96b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTStdioInit
+<LI><a href="#[2cb3250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTConfigSetExpClk
+</UL>
+
+<P><STRONG><a name="[2cb3124]"></a>UARTEnable</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, uart.o(i.UARTEnable))
+<BR><BR>[Called By]<UL><LI><a href="#[1db96b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTStdioInit
+</UL>
+
+<P><STRONG><a name="[1db96b4]"></a>UARTStdioInit</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, uartstdio.o(i.UARTStdioInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = UARTStdioInit &rArr; SysCtlClockGet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1dad864]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralPresent
+<LI><a href="#[1dade40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockGet
+<LI><a href="#[1db972c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+<LI><a href="#[2cb3124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTEnable
+<LI><a href="#[2cb3250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTConfigSetExpClk
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1db9678]"></a>UARTgetc</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, uartstdio.o(i.UARTgetc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UARTgetc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2cb337c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[1db9c90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;motorDemo
+<LI><a href="#[1db9d08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;servoDemo
+<LI><a href="#[1db9d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adcDemo
+<LI><a href="#[1db9df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lsDemo
+<LI><a href="#[1db9e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;encDemo
+</UL>
+
+<P><STRONG><a name="[1db963c]"></a>UARTgets</STRONG> (Thumb, 140 bytes, Stack size 32 bytes, uartstdio.o(i.UARTgets))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = UARTgets &rArr; UARTwrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2cacc5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTwrite
+<LI><a href="#[2cb3304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPut
+<LI><a href="#[2cb337c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[1db9c90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;motorDemo
+<LI><a href="#[1db9d08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;servoDemo
+<LI><a href="#[1db9d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adcDemo
+<LI><a href="#[1db9df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lsDemo
+<LI><a href="#[1db9e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;encDemo
+</UL>
+
+<P><STRONG><a name="[1db9600]"></a>UARTprintf</STRONG> (Thumb, 678 bytes, Stack size 72 bytes, uartstdio.o(i.UARTprintf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = UARTprintf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2cb3304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPut
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[1db9c90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;motorDemo
+<LI><a href="#[1db9ccc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;motorMenu
+<LI><a href="#[1db9d08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;servoDemo
+<LI><a href="#[1db9d44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;servoMenu
+<LI><a href="#[1db9d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adcDemo
+<LI><a href="#[1db9dbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adcMenu
+<LI><a href="#[1db9df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lsDemo
+<LI><a href="#[1db9e34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lsMenu
+<LI><a href="#[1db9e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;encDemo
+<LI><a href="#[1db9eac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;encMenu
+<LI><a href="#[1db9ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mainMenu
+</UL>
+
+<P><STRONG><a name="[1db95c4]"></a>UARTputc</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, uartstdio.o(i.UARTputc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = UARTputc &rArr; UARTwrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2cacc5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTwrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9c54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[1db9c90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;motorDemo
+<LI><a href="#[1db9d08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;servoDemo
+<LI><a href="#[1db9d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adcDemo
+<LI><a href="#[1db9df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lsDemo
+<LI><a href="#[1db9e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;encDemo
+</UL>
+
+<P><STRONG><a name="[2cacc5c]"></a>UARTwrite</STRONG> (Thumb, 50 bytes, Stack size 24 bytes, uartstdio.o(i.UARTwrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = UARTwrite
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2cb3304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPut
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db95c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTputc
+<LI><a href="#[1db963c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgets
+</UL>
+
+<P><STRONG><a name="[1db9588]"></a>Wait</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, timer.o(i.Wait))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = Wait
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db972c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+<LI><a href="#[2cb1ea0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerValueGet
+<LI><a href="#[2cb1edc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerLoadSet
+<LI><a href="#[2cb1f18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerEnable
+<LI><a href="#[2cb1f54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerDisable
+<LI><a href="#[2cb1f90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerConfigure
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9d80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adcDemo
+<LI><a href="#[1db9df8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lsDemo
+<LI><a href="#[1db9e70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;encDemo
+</UL>
+
+<P><STRONG><a name="[2cb1fcc]"></a>WaitUS</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, timer.o(i.WaitUS))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = WaitUS
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1db972c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+<LI><a href="#[2cb1ea0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerValueGet
+<LI><a href="#[2cb1edc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerLoadSet
+<LI><a href="#[2cb1f18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerEnable
+<LI><a href="#[2cb1f54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerDisable
+<LI><a href="#[2cb1f90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerConfigure
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadLineSensor
+</UL>
+
+<P><STRONG><a name="[2d1274c]"></a>__aeabi_errno_addr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, errno.o(i.__aeabi_errno_addr))
+<BR><BR>[Called By]<UL><LI><a href="#[2d12260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_strtoul
+<LI><a href="#[2d125a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtol
+<LI><a href="#[2d12e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
+</UL>
+
+<P><STRONG><a name="[2d12710]"></a>__rt_errno_addr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, errno.o(i.__aeabi_errno_addr), UNUSED)
+
+<P><STRONG><a name="[2d11ea0]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[2d11e64]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[2d11e28]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[1db927c]"></a>NmiSR</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_rvmdk.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[1db927c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NmiSR
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db927c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NmiSR
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[1db9240]"></a>FaultISR</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_rvmdk.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[1db9240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultISR
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultISR
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL>
+<P><STRONG><a name="[1db9204]"></a>IntDefaultHandler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_rvmdk.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[1db9204]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDefaultHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1db9204]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDefaultHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rvmdk.o(RESET)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

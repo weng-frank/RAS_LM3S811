@@ -1,0 +1,45 @@
+### uVision2 Project, (C) Keil Software
+### Do not modify !
+
+ cExt (*.c)
+ aExt (*.s*; *.src; *.a*)
+ oExt (*.obj)
+ lExt (*.lib)
+ tExt (*.txt; *.h; *.inc)
+ pExt (*.plm)
+ CppX (*.cpp)
+ DaveTm { 0,0,0,0,0,0,0,0 }
+
+Target (RASDemo), 0x0004 // Tools: 'ARM-ADS'
+GRPOPT 1,(Source),1,0,0
+GRPOPT 2,(Libraries),1,0,0
+
+OPTFFF 1,1,1,788529153,0,185,199,0,<.\RASDemo.c><RASDemo.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,228,255,255,255,106,0,0,0,2,0,0,0,117,3,0,0,230,1,0,0 }
+OPTFFF 1,2,2,1023410176,0,0,0,0,<.\startup_rvmdk.S><startup_rvmdk.S> 
+OPTFFF 2,3,4,0,0,0,0,0,<..\RASWare\driverlib\rvmdk\driverlib.lib><driverlib.lib> 
+OPTFFF 2,4,4,0,0,0,0,0,<..\RASWare\RASLib\rvmdk\RASLib.lib><RASLib.lib> 
+OPTFFF 2,5,4,0,0,0,0,0,<..\RASWare\utils\rvmdk\utils.lib><utils.lib> 
+
+ExtF <C:\Users\Stephen\workspace\StephenH - Robotathon\ras\robotathon\2009\RASWare\utils\uartstdio.h> 78,89,0,{ 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,161,0,0,0,161,0,0,0,168,4,0,0,55,2,0,0 }
+
+TARGOPT 1, (RASDemo)
+ ADSCLK=6000000
+  OPTTT 1,1,1,0
+  OPTHX 1,65535,0,0,0
+  OPTLX 79,66,8,<.\rvmdk\>
+  OPTOX 16
+  OPTLT 1,1,1,0,1,1,0,1,0,0,0,0
+  OPTXL 1,1,1,1,1,1,1,0,0
+  OPTFL 1,0,1
+  OPTAX 0
+  OPTDL (SARMCM3.DLL)()(DLM.DLL)(-pLM3S811)(SARMCM3.DLL)()(TLM.DLL)(-pLM3S811)
+  OPTDBG 179198,4,()()()()()()()()()() (BIN\lmidk-agdi.dll)()()()
+  OPTKEY 0,(DLGTARM)((1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=-1,-1,-1,-1,0)(110=-1,-1,-1,-1,0)(100=-1,-1,-1,-1,0)(101=-1,-1,-1,-1,0)(102=-1,-1,-1,-1,0)(103=-1,-1,-1,-1,0)(104=-1,-1,-1,-1,0)(161=-1,-1,-1,-1,0)(162=-1,-1,-1,-1,0)(163=-1,-1,-1,-1,0)(150=-1,-1,-1,-1,0)(151=-1,-1,-1,-1,0)(1011=-1,-1,-1,-1,0)(1012=-1,-1,-1,-1,0)(1013=-1,-1,-1,-1,0)(171=-1,-1,-1,-1,0)(172=-1,-1,-1,-1,0)(173=-1,-1,-1,-1,0)(1014=-1,-1,-1,-1,0)(1016=-1,-1,-1,-1,0)(136=-1,-1,-1,-1,0))
+  OPTKEY 0,(ARMDBGFLAGS)()
+  OPTKEY 0,(DLGUARM)(ллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллх0═╢8З)
+  OPTKEY 0,(lmidk-agdi)(-O4622 -S3 -FO29)
+  OPTDF 0x80
+  OPTLE <>
+  OPTLC <>
+EndOpt
+

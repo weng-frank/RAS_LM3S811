@@ -1,0 +1,4 @@
+--device DLM ".\rvmdk\rasdemo.o" ".\rvmdk\startup_rvmdk.o" "..\RASWare\driverlib\rvmdk\driverlib.lib" "..\RASWare\RASLib\rvmdk\RASLib.lib" "..\RASWare\utils\rvmdk\utils.lib" --library_type=microlib --strict --scatter "RASDemo.sct" 
+--entry Reset_Handler --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\rvmdk\RASDemo.map" -o ".\rvmdk\RASDemo.axf"
